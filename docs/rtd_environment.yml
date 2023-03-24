@@ -17,5 +17,3 @@ dependencies:
   - ipython_genutils
   - myst-nb
   - pydata-sphinx-theme<=0.12.0
-  - pip:
-      - ../
