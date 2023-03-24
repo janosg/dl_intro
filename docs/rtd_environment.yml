@@ -1,0 +1,21 @@
+---
+name: docs
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11
+  - pip
+  - setuptools_scm
+  - toml
+  - black
+  - sphinx
+  - sphinxcontrib-bibtex
+  - sphinx-copybutton
+  - sphinx-panels
+  - ipython
+  - ipython_genutils
+  - myst-nb
+  - pydata-sphinx-theme<=0.12.0
+  - pip:
+      - ../
