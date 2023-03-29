@@ -1,0 +1,37 @@
+name: dl_intro
+channels:
+  - huggingface
+  - pytorch
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11
+  - jupyterlab
+  - ipywidgets
+
+  # basics
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - seaborn
+
+  # sklearn
+  - scikit-learn
+  - scikit-image
+
+  # pytorch
+  - pytorch-cpu
+  - torchtext
+  - torchvision-cpu
+
+  # jax/flax
+  - jax
+  - jaxlib
+  - flax
+
+  # huggingface
+  - transformers
+  - tokenizers
+  - datasets
+  - sentencepiece

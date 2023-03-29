@@ -32,9 +32,17 @@ release = "0.0.1"
 # ones.
 extensions = [
     "sphinx_copybutton",
-    "myst_nb",
     "sphinx_panels",
+    "nbsphinx",
+    "myst_parser",
 ]
+
+myst_enable_extensions = [
+    "colon_fence",
+    "dollarmath",
+]
+
+source_suffix = [".md"]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -45,14 +53,28 @@ templates_path = ["_templates"]
 exclude_patterns = []
 
 
+# -- Options for nbsphinx  ----------------------------------------
+
+# Execute notebooks before conversion: 'always', 'never', 'auto' (default)
+nbsphinx_execute = "never"
+nbsphinx_prolog = r"""
+{% set docname = 'docs/source/' + env.doc2path(env.docname, base=None) %}
+
+.. only:: html
+
+    .. nbinfo::
+
+        Download the notebook :download:`here
+        <https://nbviewer.jupyter.org/github/janosg/dl_intro/blob/main/{{ docname }}>`
+"""
+
+
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
 html_theme = "pydata_sphinx_theme"
-
-html_logo = "_static/images/logo.svg"
 
 
 html_theme_options = {

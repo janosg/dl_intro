@@ -25,8 +25,8 @@ If you run the notebook locally, use ... environment
 ---
 maxdepth: 1
 ---
-bld/notebooks/exercises/example_notebook
-bld/notebooks/solutions/example_notebook
+bld/notebooks/exercises/example_notebook.ipynb
+bld/notebooks/solutions/example_notebook.ipynb
 ```
 
 

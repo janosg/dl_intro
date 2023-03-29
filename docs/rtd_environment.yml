@@ -15,5 +15,6 @@ dependencies:
   - sphinx-panels
   - ipython
   - ipython_genutils
-  - myst-nb
+  - nbsphinx
   - pydata-sphinx-theme<=0.12.0
+  - myst-parser
