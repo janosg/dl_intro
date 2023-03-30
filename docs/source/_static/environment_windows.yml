@@ -25,11 +25,6 @@ dependencies:
   - torchtext
   - torchvision-cpu
 
-  # jax/flax
-  - jax
-  - jaxlib
-  - flax
-
   # huggingface
   - transformers
   - tokenizers
