@@ -1,0 +1,36 @@
+name: dl_intro
+channels:
+  - huggingface
+  - pytorch
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11
+  - jupyterlab
+  - ipywidgets
+
+  # basics
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - seaborn
+
+  # sklearn
+  - scikit-learn
+  - scikit-image
+
+  # pytorch
+  - pytorch-cpu
+  - torchtext
+  - torchvision-cpu
+
+  # huggingface
+  - transformers
+  - tokenizers
+  - datasets
+  - sentencepiece
+
+  - pip
+  - pip:
+    - huggingface_hub[cli]
