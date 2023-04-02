@@ -10,7 +10,7 @@ We describe one way of doing things that works. Sometimes there are alternative 
 
 JupyterHub lets you access a jupyter notebook online. All packages you need are already installed. You can start writing code right away.
 
-The only donwside of JupyterHub is that the computing resources, disk space and memory are very. Your laptop or google colab notebooks might be faster and give you more space (i.e. you can work with larger models or have to clear the cache less often).
+The only donwside of JupyterHub is that the computing resources, disk space and memory are very modest. Your laptop or google colab notebooks might be faster and give you more space (i.e. you can work with larger models or have to clear the cache less often).
 
 You can start JupyterHub from ecampus. To do so, navigate to the course on ecampus and click on the JupyterHub button
 
@@ -48,10 +48,15 @@ Your own computer is usually the most convenient place to run code and in most c
 
 First, go to the [anaconda webpage](https://www.anaconda.com/products/distribution) and download the installer.
 
-![anaconda](_static/images/local/1_anaconda_page.png)
-
 Next, follow the [installation instructions](https://docs.anaconda.com/anaconda/install/index.html) for your operating system. Go with the recommended defaults in all cases.
 
+If you want, you can watch the video for your operating system below but please ignore everything that uses the anaconda navigator and always use the latest versions of anaconda in case the videos are outdated.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-sNX_ZMVpQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PHkCmuzgHOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6-i9pY2n2FU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Create the environment
 
@@ -70,13 +75,15 @@ Run the command
 conda env create -f environment.yml
 ```
 
-![create_env](_static/images/local/3_create_env.png)
-
 If your environment file is called differently (e.g. `environment_windows.yml`) you need to adjust the command (e.g. to `conda env create -f environment_windows.yml`).
 
 This will take a while and the terminal output you get differs across different computers.
 
 You only have to do this once for the entire course.
+
+The following video shows this process on windows but it is the same on all other operating systems:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CsqHyPMDSnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Opening a notebook
 
