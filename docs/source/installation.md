@@ -119,4 +119,36 @@ Once you opened a notebook, it is the same as on jupyterhub.
 
 ## On Google Colab
 
-to be written
+Google colab is a platform by google that allows you to run notebooks online, without setting anything up on your computer. The main advantage of google colab is that it provides free GPUs, which you can use to train your models faster. Using google colab for the class is strictly optional.
+
+To get started, log into your google account and visit: [https://colab.research.google.com/](https://colab.research.google.com/).
+
+![start](_static/images/colab/1_colab_start.png)
+
+Click on upload and browse and select the notebook you previously downloaded to your computer.
+
+![upload](_static/images/colab/2_browse.png)
+
+The result should look like this
+
+![nb](_static/images/colab/3_colab_notebook.png)
+
+Almost all packages we will need in this class are pre-installed on colab. The exception are the huggingface libraries. Since there is no good conda integration for google colab, we have to install these packages from within the notebook. To do so, add a new cell at the beginning and paste the following code snippet:
+
+```
+import os
+IS_ON_COLAB = bool(os.getenv("COLAB_RELEASE_TAG"))
+
+if IS_ON_COLAB:
+  !pip install transformers tokenizers datasets sentencepiece huggingface_hub[cli]
+```
+
+In the notebook it should look like this:
+
+![pip-cell](_static/images/colab/4_add_snipet.png)
+
+Press shift-enter to run the installation. The output should look like this:
+
+![pip-output](_static/images/colab/5_pip_output.png)
+
+Note that while this cell does check if the notebook is run on colab, you should remove this cell for notebooks that are not run on colab. You can ommit the pip installation if you do not need the hugginface libraries for a particular notebook.
