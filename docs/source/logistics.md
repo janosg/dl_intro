@@ -76,7 +76,6 @@ Final projects are submitted in a GitHub repository created by GitHub classroom.
 
 If you do not know yet what git is and how it works, don't worry. You will learn this during the lecture.
 
-Important: Do not work in another git repository as only the repositories created by GitHub classroom can be easily collected in the end.
 
 ### How should the code be structured
 

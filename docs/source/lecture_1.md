@@ -7,7 +7,7 @@ In this lecture we mostly cover the course logistics and get you started on runn
 ## Lecture Slides
 
 ```{raw} html
-<iframe src="_static/bld/pdfs/lecture_1.pdf" width="800" height="475"></iframe>
+<iframe src="_static/bld/pdfs/lecture_1.pdf" width="700" height="415"></iframe>
 ```
 
 ```{eval-rst}
