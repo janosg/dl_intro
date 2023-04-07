@@ -39,4 +39,5 @@ maxdepth: 1
 logistics
 installation
 lecture_1
+lecture_2
 ```
