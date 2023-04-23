@@ -28,7 +28,20 @@ bld/notebooks/solutions/exercise_3.ipynb
 
 ## Suggested Homework
 
-
+- Re-do or finish the exercises from the class
+- Vary the tasks by using different models, different texts, ...
+- Skim chapter 1 of Natural Language Processing with transformers
 
 ## Additional materials
+
+### Natural Language Processing with transformers
+
+The book [Natural language processing with transformers](https://www.oreilly.com/library/view/natural-language-processing/9781098136789/) has served as basis for many of the course materials.
+
+
+### Introduction to `pipeline`
+
+A very accessible introduction to `pipeline`
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tiZFewofSLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
