@@ -40,4 +40,5 @@ logistics
 installation
 lecture_1
 lecture_2
+lecture_3
 ```

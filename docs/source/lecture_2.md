@@ -2,7 +2,7 @@
 
 ## Topic
 
-In this lecture we mostly cover the course logistics and get you started on running your first jupyter notebooks.
+In this lecture we cover more python basics, numpy and pandas.
 
 ## Lecture Slides
 
