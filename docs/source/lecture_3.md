@@ -44,4 +44,3 @@ The book [Natural language processing with transformers](https://www.oreilly.com
 A very accessible introduction to `pipeline`
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tiZFewofSLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
