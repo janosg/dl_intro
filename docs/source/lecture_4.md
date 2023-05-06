@@ -31,6 +31,7 @@ bld/notebooks/solutions/exercise_4.ipynb
 
 - Re-do or finish the exercises from the class
 - Do hyperparameter-tuning for logistic regression, random forrests and boosting
+- Experiment with other datasets
 
 ## Additional materials
 
