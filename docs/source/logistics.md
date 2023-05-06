@@ -124,7 +124,7 @@ If you use libraries that are not part of the course environment and do not prov
 | 9      | 2023-06-19 |                                                    |
 | 10     | 2023-06-26 |                                                    |
 | 11     | 2023-07-03 |                                                    |
-| 12     | 2023-07-10 | Will most likely be rescheduled (Scipy Conference) |
+| 12     | 2023-07-10 |                                                    |
 
 
 ## Tentative Lecture Plan (this will change!)
@@ -134,7 +134,7 @@ If you use libraries that are not part of the course environment and do not prov
 - **Lecture 2**: Python, Jupyter, Git and Markdown basics
 - **Lecture 3**: Intro to huggingface ecosystem and different NLP tasks
 - **Lecture 4**: Classification with sklearn
-- **Lecture 5**: Tokenization
+- **Lecture 5**: Extracting features from a transformer model
 - **Lecture 6**: Text classification via feature extraction
 - **Lecture 7**: Text classification via fine-tuning
 - **Lecture 8**: Feedforward neural networks from scratch
