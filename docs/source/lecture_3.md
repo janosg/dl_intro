@@ -16,7 +16,6 @@ In this lecture we work with the transformers library for the first time.
 
 ## Exercises
 
-In this exercises you will take your first steps with Python.
 
 ```{toctree}
 ---

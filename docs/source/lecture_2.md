@@ -16,8 +16,6 @@ In this lecture we cover more python basics, numpy and pandas.
 
 ## Exercises
 
-In this exercises you will take your first steps with Python.
-
 ```{toctree}
 ---
 maxdepth: 1

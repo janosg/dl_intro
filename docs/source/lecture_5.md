@@ -2,8 +2,7 @@
 
 ## Topic
 
-In this lecture we look at the basics of machine learning and work with sklearn
-for the firs time.
+In this lecture we work with huggingface datasets and look at tokenization
 
 ## Lecture Slides
 
@@ -17,7 +16,6 @@ for the firs time.
 
 ## Exercises
 
-In this exercises you will take your first steps with Python.
 
 ```{toctree}
 ---

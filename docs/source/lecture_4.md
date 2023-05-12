@@ -17,7 +17,6 @@ for the firs time.
 
 ## Exercises
 
-In this exercises you will take your first steps with Python.
 
 ```{toctree}
 ---
