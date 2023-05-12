@@ -134,7 +134,7 @@ If you use libraries that are not part of the course environment and do not prov
 - **Lecture 2**: Python, Jupyter, Git and Markdown basics
 - **Lecture 3**: Intro to huggingface ecosystem and different NLP tasks
 - **Lecture 4**: Classification with sklearn
-- **Lecture 5**: Extracting features from a transformer model
+- **Lecture 5**: Huggingface datasets, tokenization
 - **Lecture 6**: Text classification via feature extraction
 - **Lecture 7**: Text classification via fine-tuning
 - **Lecture 8**: Feedforward neural networks from scratch
