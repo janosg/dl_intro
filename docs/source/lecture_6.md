@@ -28,7 +28,7 @@ bld/notebooks/solutions/exercise_6.ipynb
 
 ## Suggested Homework
 
-
+- Experiment with different classification models and their tuning parameters and try to get a better score
 
 ## Additional materials
 
@@ -36,4 +36,9 @@ bld/notebooks/solutions/exercise_6.ipynb
 
 The book [Natural language processing with transformers](https://www.oreilly.com/library/view/natural-language-processing/9781098136789/) has served as basis for many of the course materials.
 
-Chapter 2 covers the material of this lecture
+Chapter 2 covers the material of this lecture.
+
+### Videos
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AhChOFRegn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
