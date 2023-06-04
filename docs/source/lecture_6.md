@@ -26,6 +26,16 @@ bld/notebooks/exercises/exercise_6.ipynb
 bld/notebooks/solutions/exercise_6.ipynb
 ```
 
+## Slides from guest lecture
+
+```{raw} html
+<iframe src="_static/pdfs/enacom.pdf" width="700" height="415"></iframe>
+```
+
+```{eval-rst}
+:download:`Download the slides <_static/pdfs/enacom.pdf>`
+```
+
 ## Suggested Homework
 
 - Experiment with different classification models and their tuning parameters and try to get a better score

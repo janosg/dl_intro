@@ -44,4 +44,5 @@ lecture_3
 lecture_4
 lecture_5
 lecture_6
+lecture_7
 ```
