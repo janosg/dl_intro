@@ -95,9 +95,35 @@ You can use any python library you want. If you need packages that are not insta
 
 If you use libraries that are not part of the course environment and do not provide an environment file, we will deduct points.
 
-### Examples of final project applications
+### Types of final projects
 
-(to be written)
+We want the final project to be useful for your future career. Therefore, we want to give you a lot of freedom in choosing topics. On the other hand, we want to give you enough guidance so you can confidently choose a topic and not worry too much about grades. In the following, we describe three prototypical final project types that all have the potential to achieve an excellent grade:
+
+#### Focus on using NLP
+
+- Use a real-word or example dataset (e.g. from huggingface)
+- Formulate a problem you want to solve (e.g. text classification or another NLP task, regression, classification of tabular data, image classification, ...). The problem needs to be non-trivial, e.g. not classification on the iris dataset.
+- Try out several ways to solve the problem. Not just the same model with different tuning parameters but really different approaches!
+- Set up a rigorous benchmarking for the models
+- Write two pages about which approach worked best and why you think this is the case
+
+#### Focus on understanding
+
+- Choose a component of neural networks you want to understand better (e.g. different optimizers for training, transformers vs. LSTMs, encoders vs. decoders, ...)
+- Do a literature review to see what the state of the art for these components is and what alternatives there are (1 page)
+- Implement parts of your component from scratch to get a better understanding (similar to what we will do in lectures 8 - 12). Your implementation does not have to be fast or general, it should optimize for readability and learning.
+- Compare the runtime and performance of your implementation with off the shelf versions from pytorch or other frameworks (just to gain an appreciation for how optimized that stuff is)
+- Write down what you have learned (1 page)
+
+#### Focus on economic applications
+
+This kind of project can be a first step towards your Master's thesis / First paper. In comparison to a project that focuses on using NLP/ML I expect that you invest more time on thinking about an interesting question as well as finding and cleaning interesting datasets. In turn it would be ok if you only try one or two different models.
+
+- Get access to an interesting dataset (e.g. via webscraping)
+- Clean the data
+- Formulate an interesting economic question and a strategy to use NLP to answer that question
+- Try out one or two simple models to answer your question
+- Write a 2-page research proposal and assess how feasible the project is (given the results of your first models)
 
 
 ## Deadlines
