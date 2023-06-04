@@ -2,7 +2,7 @@
 
 ## Topic
 
-In this lecture we fine-tune a transformer model and use GPUs for the first time.
+In this lecture we fine tune transformer models and use a GPU for the first time.
 
 ## Lecture Slides
 
