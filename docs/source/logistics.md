@@ -165,6 +165,6 @@ This kind of project can be a first step towards your Master's thesis / First pa
 - **Lecture 7**: Text classification via fine-tuning
 - **Lecture 8**: Feedforward neural networks from scratch
 - **Lecture 9**: (Pre-)training neural networks
-- **Lecture 10**: RNNs, attention and transformers
-- **Lecture 11**: Model architectures and loss functions
-- **Lecture 12**: Final Projects tips / Bonus lecture
+- **Lecture 10**: Recurrent Neural Networks, Language Modelling, Machine Translation
+- **Lecture 11**: Transformers and the transformer revolution
+- **Lecture 12**: Final Projects, Webscraping
