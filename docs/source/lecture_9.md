@@ -46,3 +46,10 @@ all optimizers we looked at and many more.
 
 Units 4.3 and 4.4 of Sebastian Raschka's [free online course](https://lightning.ai/pages/courses/deep-learning-fundamentals/training-multilayer-neural-networks-overview/4-3-training-a-multilayer-neural-network-in-pytorch-part-1-5/) covers the topics of this
 lecture.
+
+
+### How to store GitHub credentials
+
+Storing GitHub credentials means that you do not have to type in your username and
+password each time you push or pull from the repository. Here is the
+[documentation](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git).
