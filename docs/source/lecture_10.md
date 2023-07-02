@@ -56,7 +56,7 @@ did in this course. For RNNs, one and a half videos are relevant:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PLryWeHPcBs?start=3000" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0LixFSa7yts?start=3000" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0LixFSa7yts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 You can skip everything on LSTMs. LSTMs are a variety of RNNs that alleviate some of
 the problems but now have been replaced by transformers.
