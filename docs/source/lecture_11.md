@@ -45,4 +45,3 @@ You already know Andrej Karpathy from his great blogpost. He also has a video wh
 implements transformers in Pytorch.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kCc8FmEb1nY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
