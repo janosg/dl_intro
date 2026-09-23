@@ -32,7 +32,7 @@ release = "0.0.1"
 # ones.
 extensions = [
     "sphinx_copybutton",
-    "sphinx_panels",
+    "sphinx_design",
     "nbsphinx",
     "myst_parser",
 ]
@@ -57,6 +57,8 @@ exclude_patterns = []
 
 # Execute notebooks before conversion: 'always', 'never', 'auto' (default)
 nbsphinx_execute = "never"
+# the notebooks contain no widget outputs, so no widget javascript is needed
+nbsphinx_widgets_path = ""
 nbsphinx_prolog = r"""
 {% set docname = 'docs/source/' + env.doc2path(env.docname, base=None) %}
 

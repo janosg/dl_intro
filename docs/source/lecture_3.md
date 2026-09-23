@@ -10,8 +10,10 @@ In this lecture we work with the transformers library for the first time.
 <iframe src="_static/bld/pdfs/lecture_3.pdf" width="700" height="415"></iframe>
 ```
 
-```{eval-rst}
-:download:`Download the slides <_static/bld/pdfs/lecture_3.pdf>`
+```{button-link} _static/bld/pdfs/lecture_3.pdf
+:color: primary
+:outline:
+Download the slides
 ```
 
 ## Exercises

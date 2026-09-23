@@ -22,14 +22,22 @@ right after the lecture.
 
 ## Instructors
 
-```{eval-rst}
-+--------------------------------------------------------------------+-------------------------------------------------------------------+
-+ .. figure:: _static/images/janos.jpg                               + .. figure:: _static/images/mariam.png                             +
-+     :width: 200px                                                  +     :width: 200px                                                 +
-+                                                                    +                                                                   +
-+     `Instructor: Janoś Gabler <https://github.com/janosg>`_        +     `TA: Mariam Petrosyan <https://github.com/mpetrosian>`_       +
-+--------------------------------------------------------------------+-------------------------------------------------------------------+
-```
+::::{grid} 2 2 4 4
+:gutter: 3
+
+:::{grid-item-card} Instructor: Janoś Gabler
+:link: https://github.com/janosg
+:img-top: _static/images/janos.jpg
+:text-align: center
+:::
+
+:::{grid-item-card} TA: Mariam Petrosyan
+:link: https://github.com/mpetrosian
+:img-top: _static/images/mariam.png
+:text-align: center
+:::
+
+::::
 
 ## Distribution of materials
 
@@ -91,9 +99,9 @@ The written answers to the questions have to be in the `README.md` file of your 
 
 ### Which libraries can you use
 
-You can use any python library you want. If you need packages that are not installed in the course environment, your project needs to contain an `environment.yml` file with all packages you use.
+You can use any python library you want. If you need packages that are not installed in the course environment, your project needs to contain a `pyproject.toml` and a `uv.lock` file (created with `uv init` and `uv add`, see the [installation page](installation.md)) with all packages you use.
 
-If you use libraries that are not part of the course environment and do not provide an environment file, we will deduct points.
+If you use libraries that are not part of the course environment and do not provide these files, we will deduct points.
 
 ### Types of final projects
 

@@ -10,8 +10,10 @@ In this lecture we fine tune transformer models and use a GPU for the first time
 <iframe src="_static/bld/pdfs/lecture_7.pdf" width="700" height="415"></iframe>
 ```
 
-```{eval-rst}
-:download:`Download the slides <_static/bld/pdfs/lecture_7.pdf>`
+```{button-link} _static/bld/pdfs/lecture_7.pdf
+:color: primary
+:outline:
+Download the slides
 ```
 
 ## Exercises

@@ -1,154 +1,122 @@
 # Installation
 
-The following contains everything you need to know to install Python and all relevant packages on your computer, access online computing resources and run jupyter notebooks. Please read it carefully before approaching us with questions.
+This page describes how to set up a Python environment with all packages we use in the
+course and how to run notebooks in it. Please read it before approaching us with
+questions.
 
-We describe one way of doing things that works. Sometimes there are alternative ways (e.g. using a different shell, using a graphical interface instead of a shell, ...). If you know what you are doing, feel free to do things differently but be aware that we do not provide help if you run into problems in that case.
+We use [uv](https://docs.astral.sh/uv/) to manage Python versions, virtual environments
+and packages. You do not need conda, pip or a separate Python installation. The
+environment is defined by two files: `pyproject.toml` lists the packages, `uv.lock` pins
+their exact versions. Both files are the same for macOS, Linux and Windows, so everyone
+in the course works in an identical environment.
 
+**The short version** if you know your way around uv: clone
+[dl_intro](https://github.com/janosg/dl_intro), run `uv sync` inside it and start
+notebooks with `uv run jupyter lab`.
 
+## Install uv
 
-## In JupyterHub
+::::{tab-set}
 
-JupyterHub lets you access a jupyter notebook online. All packages you need are already installed. You can start writing code right away.
-
-The only donwside of JupyterHub is that the computing resources, disk space and memory are very modest. Your laptop or google colab notebooks might be faster and give you more space (i.e. you can work with larger models or have to clear the cache less often).
-
-You can start JupyterHub from ecampus. To do so, navigate to the course on ecampus and click on the JupyterHub button
-
-![button](_static/images/jupyterhub/1_ecampus_button.png)
-
-Click on "start"
-
-![start](_static/images/jupyterhub/2_ecampus_start.png)
-
-Click on "start my server" and wait. This can take a while. Do not reload the page.
-
-![start_server](_static/images/jupyterhub/3_start_my_server.png)
-
-You can click on the top tile ("Notebook - Python 3") to start a fresh notebook.
-You can also drag and drop a notebook from your computer to the left sidebar and open it
-by double-clicking on it.
-
-![open](_static/images/jupyterhub/4_start_screen.png)
-
-One the notebook is open, you can add your python code:
-
-![hello](_static/images/jupyterhub/5_hello_world.png)
-
-When you are done, you can download the notebook and use it on a different computer:
-
-![download](_static/images/jupyterhub/6_download.png)
-
-
-## On your computer
-
-Your own computer is usually the most convenient place to run code and in most cases it is more powerful than what you get on JupyterHub. However, you have to install Python there and create and activate a conda environment.
-
-### Get Anaconda
-
-
-First, go to the [anaconda webpage](https://www.anaconda.com/products/distribution) and download the installer.
-
-Next, follow the [installation instructions](https://docs.anaconda.com/anaconda/install/index.html) for your operating system. Go with the recommended defaults in all cases.
-
-If you want, you can watch the video for your operating system below but please ignore everything that uses the anaconda navigator and always use the latest versions of anaconda in case the videos are outdated.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-sNX_ZMVpQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PHkCmuzgHOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6-i9pY2n2FU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-### Create the environment
-
-Download the environment file for your operating system. You can choose where you save it.
-
-```{eval-rst}
-:download:`windows <_static/environment_windows.yml>`
-:download:`mac and linux <_static/environment.yml>`
+:::{tab-item} macOS and Linux
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
+:::
 
-Open a Terminal (on windows, use the Anaconda Prompt that comes with Anaconda) in the folder in which you stored the environment file.
+:::{tab-item} Windows
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+:::
 
-Run the command
+::::
+
+Restart your terminal afterwards and check that `uv --version` prints a version number.
+The [uv installation guide](https://docs.astral.sh/uv/getting-started/installation/)
+lists alternatives such as Homebrew, winget or pipx.
+
+You only need to do this once for the entire course.
+
+## Get the course environment
+
+The environment files live in the repository behind this web page. The easiest way to
+get them is to clone the repository. You then also have all exercise notebooks on your
+computer.
 
 ```bash
-conda env create -f environment.yml
+git clone https://github.com/janosg/dl_intro.git
+cd dl_intro
 ```
 
-If your environment file is called differently (e.g. `environment_windows.yml`) you need to adjust the command (e.g. to `conda env create -f environment_windows.yml`).
+If you do not want to clone the repository, download
+[pyproject.toml](https://raw.githubusercontent.com/janosg/dl_intro/main/pyproject.toml)
+and [uv.lock](https://raw.githubusercontent.com/janosg/dl_intro/main/uv.lock) into an
+empty folder of your choice and open a terminal in that folder.
 
-This will take a while and the terminal output you get differs across different computers.
+## Create the environment
 
-You only have to do this once for the entire course.
-
-The following video shows this process on windows but it is the same on all other operating systems:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CsqHyPMDSnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-### Opening a notebook
-
-There are many ways to open a notebook. Some do not involve a terminal. Use them if you know what you are doing, but do what we write below if you are new:
-
-Open a terminal (on windows use the Anaconda Prompt that comes with Anaconda) in the folder in which your notebook is stored or in the folder in which you want to store a new notebook. This can be any folder and it does not need to contain the environment file from the pervios step.
-
-Run the following commands:
+In the folder that contains the two files, run
 
 ```bash
-conda activate dl_intro
+uv sync
 ```
-`dl_intro` is the name of the environment you created in the previous step. The environment name is not the same as the name of the `.yml` file.
+
+This downloads a suitable Python version if necessary, creates a virtual environment in
+the hidden folder `.venv` and installs all packages in exactly the versions from
+`uv.lock`. It downloads roughly 1-2 GB (pytorch is large), so do this once at home and
+not in the lecture. On Linux and Windows a CPU-only version of pytorch is installed.
+
+If we update the environment during the course, you pull the new files (or download
+them again) and run `uv sync` again. Only the changes are installed.
+
+## Run notebooks
+
+In the same folder, run
 
 ```bash
-jupyter notebook
+uv run jupyter lab
 ```
 
-![activate_and_notebook](_static/images/local/4_activate_and_notebook.png)
+`uv run` executes a command inside the environment. You never have to activate anything.
+Jupyter opens in your browser and lets you open notebooks or create new ones. Notebooks
+you download from this web page should be saved inside the `dl_intro` folder or a
+subfolder of it. The terminal has to stay open while you work.
 
-This will open a tab with the notebook in your browser. Moreover, it will print cryptic messages to your terminal. You do not need to understand them but you cannot close the terminal. Otherwise your notebook shuts down as well.
+Some alternatives:
 
-![blocked](_static/images/local/5_blocked.png)
+- If you use [VS Code](https://code.visualstudio.com/) with the Jupyter extension,
+  open the folder and select the Python interpreter from `.venv` as the kernel.
+- To run a script, use `uv run python my_script.py`.
+- If you prefer an activated environment, run `source .venv/bin/activate` (macOS and
+  Linux) or `.venv\Scripts\activate` (Windows). Afterwards, `jupyter lab` and `python`
+  work without the `uv run` prefix.
 
-On the start screen you can open existing notebooks or create new ones.
+## Add packages
 
-![start_screen](_static/images/local/6_start_screen.png)
+To add a package to the environment, run `uv add some-package` in the folder. This
+updates `pyproject.toml` and `uv.lock` and installs the package. For your final
+project you create your own environment the same way: `uv init` in the project folder,
+then `uv add` for each package you need. See the
+[uv documentation](https://docs.astral.sh/uv/guides/projects/) for details.
 
-Once you opened a notebook, it is the same as on jupyterhub.
+## Google Colab
 
-![hello](_static/images/local/7_hello.png)
+[Google Colab](https://colab.research.google.com/) runs notebooks in the cloud and
+provides free GPUs. Using it is optional. We use it in lecture 7, where fine-tuning a
+model on a CPU would take too long. Log into your Google account, upload a notebook via
+`File -> Upload notebook` and select a GPU under `Runtime -> Change runtime type`.
 
+Most packages we need are pre-installed on Colab, but the huggingface libraries are
+not. Add the following cell at the top of every notebook you run on Colab:
 
-## On Google Colab
-
-Google colab is a platform by google that allows you to run notebooks online, without setting anything up on your computer. The main advantage of google colab is that it provides free GPUs, which you can use to train your models faster. Using google colab for the class is strictly optional.
-
-To get started, log into your google account and visit: [https://colab.research.google.com/](https://colab.research.google.com/).
-
-![start](_static/images/colab/1_colab_start.png)
-
-Click on upload and browse and select the notebook you previously downloaded to your computer.
-
-![upload](_static/images/colab/2_browse.png)
-
-The result should look like this
-
-![nb](_static/images/colab/3_colab_notebook.png)
-
-Almost all packages we will need in this class are pre-installed on colab. The exception are the huggingface libraries. Since there is no good conda integration for google colab, we have to install these packages from within the notebook. To do so, add a new cell at the beginning and paste the following code snippet:
-
-```
+```ipython
 import os
+
 IS_ON_COLAB = bool(os.getenv("COLAB_RELEASE_TAG"))
 
 if IS_ON_COLAB:
-  !pip install transformers tokenizers datasets sentencepiece huggingface_hub[cli]
+    !pip install transformers tokenizers datasets sentencepiece huggingface_hub accelerate
 ```
 
-In the notebook it should look like this:
-
-![pip-cell](_static/images/colab/4_add_snipet.png)
-
-Press shift-enter to run the installation. The output should look like this:
-
-![pip-output](_static/images/colab/5_pip_output.png)
-
-Note that while this cell does check if the notebook is run on colab, you should remove this cell for notebooks that are not run on colab. You can ommit the pip installation if you do not need the hugginface libraries for a particular notebook.
+The condition makes the cell harmless when you run the notebook locally.

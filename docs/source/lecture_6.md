@@ -11,8 +11,10 @@ classification with sklearn.
 <iframe src="_static/bld/pdfs/lecture_6.pdf" width="700" height="415"></iframe>
 ```
 
-```{eval-rst}
-:download:`Download the slides <_static/bld/pdfs/lecture_6.pdf>`
+```{button-link} _static/bld/pdfs/lecture_6.pdf
+:color: primary
+:outline:
+Download the slides
 ```
 
 ## Exercises
@@ -32,8 +34,10 @@ bld/notebooks/solutions/exercise_6.ipynb
 <iframe src="_static/pdfs/enacom.pdf" width="700" height="415"></iframe>
 ```
 
-```{eval-rst}
-:download:`Download the slides <_static/pdfs/enacom.pdf>`
+```{button-link} _static/pdfs/enacom.pdf
+:color: primary
+:outline:
+Download the slides
 ```
 
 ## Suggested Homework

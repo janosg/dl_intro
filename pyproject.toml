@@ -1,0 +1,47 @@
+# Python environment for the course "Intro to Deep Learning" at the University of Bonn.
+#
+# This file is generated from the pyproject.toml of the internal course repository. Do
+# not edit it by hand.
+#
+# Usage: Install uv (https://docs.astral.sh/uv/), put this file and the accompanying
+# uv.lock into a folder (or clone this repository) and run `uv sync` in that folder.
+# Afterwards, start jupyter with `uv run jupyter lab`. See
+# https://dl-intro.readthedocs.io/en/latest/installation.html for details.
+
+[project]
+name = "dl-intro"
+version = "0.0.1"
+description = "Course environment for Intro to Deep Learning at the University of Bonn"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "jupyterlab",
+    "ipywidgets",
+    "numpy",
+    "scipy",
+    "pandas",
+    "pyarrow",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn",
+    "torch",
+    "torchvision",
+    "transformers<5",
+    "tokenizers",
+    "datasets",
+    "sentencepiece",
+    "accelerate",
+    "huggingface_hub[cli]",
+    "selenium",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu" }]
+torchvision = [{ index = "pytorch-cpu" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

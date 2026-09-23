@@ -10,8 +10,10 @@ In this lecture we mostly cover the course logistics and get you started on runn
 <iframe src="_static/bld/pdfs/lecture_1.pdf" width="700" height="415"></iframe>
 ```
 
-```{eval-rst}
-:download:`Download the slides <_static/bld/pdfs/lecture_1.pdf>`
+```{button-link} _static/bld/pdfs/lecture_1.pdf
+:color: primary
+:outline:
+Download the slides
 ```
 
 ## Exercises
@@ -30,7 +32,7 @@ bld/notebooks/solutions/exercise_1.ipynb
 
 1. Finish all exercises you could not finish in class
 2. Think about a few similar things you can do with what you have learned and add them to the notebook.
-3. Run this notebook on JupyterHub, your laptop and google colab (if you plan to use colab)
+3. Run this notebook on your laptop and on google colab (if you plan to use colab)
 
 ## Additional materials
 

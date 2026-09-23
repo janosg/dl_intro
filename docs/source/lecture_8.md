@@ -11,8 +11,10 @@ In this lecture you learn what a neural network actually is and implement one fr
 <iframe src="_static/bld/pdfs/lecture_8.pdf" width="700" height="415"></iframe>
 ```
 
-```{eval-rst}
-:download:`Download the slides <_static/bld/pdfs/lecture_8.pdf>`
+```{button-link} _static/bld/pdfs/lecture_8.pdf
+:color: primary
+:outline:
+Download the slides
 ```
 
 ## Exercises

@@ -12,8 +12,10 @@ components form Pytorch.
 <iframe src="_static/bld/pdfs/lecture_9.pdf" width="700" height="415"></iframe>
 ```
 
-```{eval-rst}
-:download:`Download the slides <_static/bld/pdfs/lecture_9.pdf>`
+```{button-link} _static/bld/pdfs/lecture_9.pdf
+:color: primary
+:outline:
+Download the slides
 ```
 
 ## Exercises

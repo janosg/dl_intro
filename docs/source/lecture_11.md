@@ -12,8 +12,10 @@ natural language processing.
 <iframe src="_static/bld/pdfs/lecture_11.pdf" width="700" height="415"></iframe>
 ```
 
-```{eval-rst}
-:download:`Download the slides <_static/bld/pdfs/lecture_11.pdf>`
+```{button-link} _static/bld/pdfs/lecture_11.pdf
+:color: primary
+:outline:
+Download the slides
 ```
 
 ## Exercises

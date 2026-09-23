@@ -13,8 +13,10 @@ understand them on our way to understanding transformers.
 <iframe src="_static/bld/pdfs/lecture_10.pdf" width="700" height="415"></iframe>
 ```
 
-```{eval-rst}
-:download:`Download the slides <_static/bld/pdfs/lecture_10.pdf>`
+```{button-link} _static/bld/pdfs/lecture_10.pdf
+:color: primary
+:outline:
+Download the slides
 ```
 
 ## Exercises

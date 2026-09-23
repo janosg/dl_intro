@@ -10,8 +10,10 @@ In this lecture we work with huggingface datasets and look at tokenization
 <iframe src="_static/bld/pdfs/lecture_5.pdf" width="700" height="415"></iframe>
 ```
 
-```{eval-rst}
-:download:`Download the slides <_static/bld/pdfs/lecture_5.pdf>`
+```{button-link} _static/bld/pdfs/lecture_5.pdf
+:color: primary
+:outline:
+Download the slides
 ```
 
 ## Exercises

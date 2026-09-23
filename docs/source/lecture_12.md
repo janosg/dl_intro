@@ -11,8 +11,10 @@ In this lecture you learn about webscraping and we discuss final projects.
 <iframe src="_static/pdfs/sjur_scraping.pdf" width="700" height="415"></iframe>
 ```
 
-```{eval-rst}
-:download:`Download the slides <_static/pdfs/sjur_scraping.pdf>`
+```{button-link} _static/pdfs/sjur_scraping.pdf
+:color: primary
+:outline:
+Download the slides
 ```
 
 ## Exercises

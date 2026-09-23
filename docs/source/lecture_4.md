@@ -11,8 +11,10 @@ for the firs time.
 <iframe src="_static/bld/pdfs/lecture_4.pdf" width="700" height="415"></iframe>
 ```
 
-```{eval-rst}
-:download:`Download the slides <_static/bld/pdfs/lecture_4.pdf>`
+```{button-link} _static/bld/pdfs/lecture_4.pdf
+:color: primary
+:outline:
+Download the slides
 ```
 
 ## Exercises
